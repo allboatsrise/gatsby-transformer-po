@@ -2,8 +2,18 @@
   "name": "@allboatsrise/gatsby-transformer-po",
   "version": "1.0.0",
   "description": "Gatsby transformer plugin for PO files",
+  "contributors": [{
+    "name": "Andrej Pavlovic",
+    "email": "apavlovic@allboatsrise.com",
+    "url": "https://allboatsrise.com"
+  }],
   "license": "MIT",
   "main": "index.js",
+  "homepage": "https://github.com/allboatsrise/gatsby-transformer-po",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allboatsrise/gatsby-transformer-po.git"
+  },
   "scripts": {
     "watch": "concurrently --kill-others \"npm:typescript-watch\" \"npm:babel-watch\"",
     "build": "npm run typescript-check && npm run babel-build",
@@ -12,6 +22,9 @@
     "typescript-check": "tsc --noEmit",
     "typescript-watch": "tsc --noEmit --watch",
     "clean": "rimraf *.js"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.0",
@@ -25,5 +38,8 @@
     "concurrently": "^4.1.1",
     "rimraf": "^2.6.3",
     "typescript": "^3.5.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
