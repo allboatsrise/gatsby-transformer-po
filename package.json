@@ -1,0 +1,29 @@
+{
+  "name": "@allboatsrise/gatsby-transformer-po",
+  "version": "1.0.0",
+  "description": "Gatsby transformer plugin for PO files",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "watch": "concurrently --kill-others \"npm:typescript-watch\" \"npm:babel-watch\"",
+    "build": "npm run typescript-check && npm run babel-build",
+    "babel-build": "babel src --out-dir . --extensions \".ts,.tsx\"",
+    "babel-watch": "babel --watch src --out-dir . --extensions \".ts,.tsx\"",
+    "typescript-check": "tsc --noEmit",
+    "typescript-watch": "tsc --noEmit --watch",
+    "clean": "rimraf *.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.0",
+    "pofile": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-preset-gatsby-package": "^0.2.0",
+    "concurrently": "^4.1.1",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.5.2"
+  }
+}
