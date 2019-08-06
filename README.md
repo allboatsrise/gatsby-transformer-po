@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-po',
+      resolve: '@allboatsrise/gatsby-transformer-po',
       options: {
         // Possible values:
         //   1. `({node: GatsbyApiNode, object: PO}) => string` - callback called for each file expecting locale string to be returned
