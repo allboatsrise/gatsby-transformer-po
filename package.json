@@ -2,11 +2,13 @@
   "name": "@allboatsrise/gatsby-transformer-po",
   "version": "1.0.0",
   "description": "Gatsby transformer plugin for PO files",
-  "contributors": [{
-    "name": "Andrej Pavlovic",
-    "email": "apavlovic@allboatsrise.com",
-    "url": "https://allboatsrise.com"
-  }],
+  "contributors": [
+    {
+      "name": "Andrej Pavlovic",
+      "email": "apavlovic@allboatsrise.com",
+      "url": "https://allboatsrise.com"
+    }
+  ],
   "license": "MIT",
   "main": "index.js",
   "homepage": "https://github.com/allboatsrise/gatsby-transformer-po",
