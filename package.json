@@ -23,7 +23,7 @@
     "babel-watch": "babel --watch src --out-dir . --extensions \".ts,.tsx\"",
     "typescript-check": "tsc --noEmit",
     "typescript-watch": "tsc --noEmit --watch",
-    "clean": "rimraf *.js"
+    "clean": "rimraf gatsby-*.js"
   },
   "peerDependencies": {
     "gatsby": "^2.13.0"
